@@ -25,14 +25,14 @@ Reimplementation of "A Novel Approach To Lion Re-Identification Using Vision Tra
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Project setup (uv, dependencies) | pending |
-| 2 | Data loading & exploration | pending |
-| 3 | Data preparation pipeline | pending |
-| 4 | CNN baseline model | pending |
-| 5 | Vision Transformer model | pending |
-| 6 | Training loop & evaluation | pending |
-| 7 | Ablation studies | pending |
-| 8 | Results comparison & visualization | pending |
+| 1 | Project setup (uv, dependencies) | done |
+| 2 | Data loading & exploration | done |
+| 3 | Data preparation pipeline | done |
+| 4 | CNN baseline model | done |
+| 5 | Vision Transformer model | done |
+| 6 | Training loop & evaluation | done |
+| 7 | Ablation studies | done |
+| 8 | Results comparison & visualization | done |
 
 ---
 
@@ -178,11 +178,17 @@ lionreid_vit/
   src/
     __init__.py
     dataset.py                    # data loading, splits, augmentation
-    cnn.py                        # CNN model definition
-    vit.py                        # ViT model setup (timm)
-    train.py                      # training loop, evaluation
-    evaluate.py                   # metrics, plots, comparison
-  train.py                        # CLI entry point
+    cnn.py                        # CNN model + ablation variants
+    vit.py                        # ViT model + ablation variants
+    train.py                      # training loop, CLI entry point
+    evaluate.py                   # metrics, plots per model
+    ablation.py                   # ablation study runner
+    report.py                     # comparison PNGs + PDF report
   pyproject.toml
-  output/                         # checkpoints, plots, results
+  output/
+    cnn/                          # CNN checkpoints, plots, metrics
+    vit/                          # ViT checkpoints, plots, metrics
+    ablations/                    # ablation results
+    comparison/                   # comparison plots
+    lion_reid_report.pdf          # consolidated PDF report
 ```
