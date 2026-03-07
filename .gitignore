@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+
+# uv
+uv.lock
+
+# Model outputs
+output/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+
+# Data - don't track the dataset
+*.JPG
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# PDF
+*.pdf
