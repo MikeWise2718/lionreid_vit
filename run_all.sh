@@ -16,10 +16,9 @@ echo "  Data:   $DATA_DIR"
 echo "  Epochs: $EPOCHS"
 echo "============================================"
 
-# Ensure CUDA torch is installed
+# Install dependencies (CUDA torch configured in pyproject.toml)
 source ~/.local/bin/env 2>/dev/null || true
 uv sync
-uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 
 # Verify CUDA
 uv run python -c "
