@@ -1,0 +1,19 @@
+[project]
+name = "lionreid-vit"
+version = "0.1.0"
+description = "Lion re-identification using Vision Transformers and CNNs"
+requires-python = ">=3.13"
+dependencies = [
+    "torch",
+    "torchvision",
+    "timm",
+    "rich",
+    "rich-argparse",
+    "matplotlib",
+    "scikit-learn",
+    "pillow",
+    "fpdf2",
+]
+
+[project.scripts]
+lionreid = "src.train:main"
