@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/senckenberg/Lion_6_ID/**)"
+    ]
+  }
+}
