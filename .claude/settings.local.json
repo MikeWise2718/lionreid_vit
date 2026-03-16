@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Read(//d/senckenberg/Lion_6_ID/**)"
+      "Read(//d/senckenberg/Lion_6_ID/**)",
+      "Bash(scp:*)"
     ]
   }
 }
